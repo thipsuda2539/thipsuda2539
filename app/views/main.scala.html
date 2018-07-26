@@ -1,0 +1,32 @@
+
+@(content: Html)
+<html>
+    <head>
+        <title>THE BAG SHOP</title>
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div style="background-color: #3c3c3c">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-12">
+                    @header()
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    @Menu()
+                </div>
+                <div class="col-md-9" >
+                    @content
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    @footers()
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
